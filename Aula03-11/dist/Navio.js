@@ -10,18 +10,24 @@ class Navio {
         this.canhoes = canhoes;
     }
     navegar() {
-        console.log(`${this.nome} está navegando!`);
+        return `O navio ${this.nome} está navegando!`;
     }
     atacar() {
-        console.log(`${this.nome} está atacando com seus canhões.`);
+        return `O navio ${this.nome} está atacando com seus ${this.canhoes} canhões.`;
     }
     receberDano(dano) {
-        if (dano <= 0) {
-            this.vida += dano;
-        }
+        if (dano > 0)
+            this.vida -= dano;
+        if (this.vida < 0)
+            this.vida = 0;
     }
     exibirInformacoes() {
-        console.log("Detealhes do navio: ");
+        return `
+      Nome: ${this.nome}
+      Tripulação: ${this.capacidadeTripulacao}
+      vida: ${this.vida}
+      Velocidade: ${this.velocidade}
+      Canhões:  ${this.canhoes}`;
     }
 }
 exports.Navio = Navio;

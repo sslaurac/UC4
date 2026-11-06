@@ -9,11 +9,11 @@ export class Bergantim extends Navio{
 
     }
 
-    protected navegar():string{
+     navegar():string{
         return `O Bergantim ${this.nome} aproveita seus ventos favoráveis para navegar rapidamente.`
     }
 
-    protected atacar():string {
+     atacar():string {
         return `O Bergantim ${this.nome} realiza uma sequência rápida de disparos com seus canhões.`
     }
 

@@ -14,20 +14,20 @@ export class Navio{
          this.canhoes = canhoes
 
       }
-   protected navegar():string {
+    navegar():string {
       return `O navio ${this.nome} está navegando!`
    }
 
-   protected atacar():string {
+    atacar():string {
       return `O navio ${this.nome} está atacando com seus ${this.canhoes} canhões.`
    }
 
-   protected receberDano(dano:number):void{
+    receberDano(dano:number):void{
      if (dano > 0) this.vida -= dano
      if (this.vida < 0) this.vida = 0
    }
    
-   protected exibirInformacoes():string {
+   exibirInformacoes():string {
       return `
       Nome: ${this.nome}
       Tripulação: ${this.capacidadeTripulacao}

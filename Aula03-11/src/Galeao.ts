@@ -8,15 +8,15 @@ export class Galeao extends Navio{
         this.veririficarTripulacao()
     }
 
-    protected navegar():string{
+     navegar():string{
         return `O galeão ${this.nome} avança lentamente pelo mar.`
     }
 
-    protected atacar():string{
+     atacar():string{
         return `O galeão ${this.nome} dispara uma poderosa salva com ${this.canhoes} canhões.`
     }
 
-    protected repararNavio():void{
+     repararNavio():void{
         this.vida += 100
         if (this.vida > 200) this.vida = 200
     } 

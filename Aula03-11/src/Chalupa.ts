@@ -8,15 +8,15 @@ export class Chalupa extends Navio{
     
     }
     
-    protected navegar():string{
+     navegar():string{
         return `A chalupa ${this.nome} utiliza sua agilidade para realizar manobras rápidas.`
     }
 
-    protected atacar():string {
+     atacar():string {
         return `A chalupa ${this.nome} dispara seus poucos canhões e tenta escapar rapidamente.`
     }
 
-    protected explorarIlha():string{
+     explorarIlha():string{
         return `A tripualção da ${this.nome} está explorando uma ilha em busca de tesouros.`
     }
 
